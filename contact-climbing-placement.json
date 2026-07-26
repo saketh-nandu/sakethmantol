@@ -1,0 +1,16 @@
+{
+  "sectionId": "contact",
+  "label": "Contact Video",
+  "src": "http://localhost:3000/assets/contact%20us%20climbling.mp4",
+  "placement": {
+    "x": 48.49259864473704,
+    "y": 20.89886310389323,
+    "width": 50.54169614478399,
+    "height": 41.12866611250469
+  },
+  "flipHorizontal": false,
+  "chromaSettings": {
+    "intensity": 60,
+    "blur": 0
+  }
+}

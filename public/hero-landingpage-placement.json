@@ -1,0 +1,16 @@
+{
+  "sectionId": "hero",
+  "label": "Landing Page Video",
+  "src": "http://localhost:3000/assets/landingpage.mp4",
+  "placement": {
+    "x": -4.584883412741645,
+    "y": 8.46259646304137,
+    "width": 47.52260684643623,
+    "height": 60.398472390953756
+  },
+  "flipHorizontal": false,
+  "chromaSettings": {
+    "intensity": 0,
+    "blur": 0
+  }
+}

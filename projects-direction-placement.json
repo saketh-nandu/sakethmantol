@@ -1,0 +1,16 @@
+{
+  "sectionId": "projects",
+  "label": "Project Video",
+  "src": "http://localhost:3000/assets/project%20and%20story%20need%20to%20be%20change%20direction.mp4",
+  "placement": {
+    "x": 51.22800932447633,
+    "y": 6.228350352687115,
+    "width": 49.1694537835294,
+    "height": 17.39406245487419
+  },
+  "flipHorizontal": true,
+  "chromaSettings": {
+    "intensity": 0,
+    "blur": 0
+  }
+}

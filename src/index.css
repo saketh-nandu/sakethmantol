@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-serif-editorial {
+    font-family: 'Plus Jakarta Sans', 'Space Grotesk', sans-serif;
+  }
+  .font-heading {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  }
+  .font-display {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  }
+  .font-sans-body {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  }
+}
+
+/* Custom smooth scrollbar & typography adjustments */
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Hide scrollbar for clean gallery and minimalist components while keeping functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* GenZ Interactive Hover Text Animations */
+.genz-hover-header {
+  display: inline-block;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), letter-spacing 0.35s ease, color 0.25s ease;
+  will-change: transform, letter-spacing;
+}
+
+.genz-hover-header:hover {
+  transform: translateX(8px) scale(1.02);
+  letter-spacing: -0.01em;
+}
+
+.genz-hover-slide {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.genz-hover-slide span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.genz-hover-slide:hover span {
+  transform: translateY(-100%);
+}
+
+/* Custom subtle underline animation */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #111111;
+  transform-origin: bottom right;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* ── Content Protection ─────────────────────────────────────── */
+/* Disable text selection everywhere except inputs */
+*:not(input):not(textarea) {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Disable image/video pointer events to prevent drag-save */
+img, video, canvas {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+/* Re-enable pointer events on interactive elements that need them */
+a, button, input, textarea, [role="button"] {
+  pointer-events: auto;
+}

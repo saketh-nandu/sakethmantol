@@ -1,0 +1,16 @@
+{
+  "sectionId": "creative",
+  "label": "Creative Video",
+  "src": "http://localhost:3000/assets/project%20and%20story%20need%20to%20be%20change%20direction.mp4",
+  "placement": {
+    "x": -0.31479811924394285,
+    "y": 8.46437477409038,
+    "width": 46.11537474252299,
+    "height": 20.744559120143286
+  },
+  "flipHorizontal": false,
+  "chromaSettings": {
+    "intensity": 0,
+    "blur": 0
+  }
+}
