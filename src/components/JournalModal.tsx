@@ -27,7 +27,7 @@ export const JournalModal: React.FC<JournalModalProps> = ({ article, onClose }) 
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 overflow-y-auto bg-[#111111]/60 backdrop-blur-sm flex justify-center items-start p-4 sm:p-6 md:p-12">
+      <div className="fixed inset-0 z-[110] overflow-y-auto bg-[#111111]/60 backdrop-blur-sm flex justify-center items-start p-4 sm:p-6 md:p-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.96, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
