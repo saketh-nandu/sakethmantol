@@ -1,4 +1,4 @@
-import { Project, CreativeWork, JourneyItem, GalleryItem, JournalArticle, SkillGroup } from '../types';
+import { Project, CreativeWork, JourneyItem, GalleryItem, JournalArticle, MusicTrack, ResearchPaper, SkillGroup } from '../types';
 
 export const PROJECTS: Project[] = [
   {
@@ -525,6 +525,89 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     location: 'Romantic Drama',
     date: '2024',
     aspectRatio: 'aspect-[16/9]'
+  }
+];
+
+const musicTrack = (name: string) => new URL(`../../assets/music/${name}`, import.meta.url).href;
+const paperAsset = (name: string) => new URL(`../../assets/papers/${name}`, import.meta.url).href;
+
+export const MUSIC_TRACKS: MusicTrack[] = [
+  {
+    id: 'm1',
+    title: 'Blood Sword',
+    subtitle: 'Dark Ambient Combat Concept',
+    description: 'A cinematic, tension-heavy concept built around rhythmic percussion and ominous low-end motion.',
+    fileUrl: musicTrack('Blood sword.mp3'),
+    accent: 'from-[#111111] via-[#333333] to-[#666666]',
+    aspectRatio: 'aspect-[4/3]'
+  },
+  {
+    id: 'm2',
+    title: 'The Last Dawn of Chains',
+    subtitle: 'Epic Emotional Arc',
+    description: 'A soaring, melancholic concept that leans into layered strings and a restrained, hopeful chorus.',
+    fileUrl: musicTrack('The Last Dawn of Chains.mp3'),
+    accent: 'from-[#1f2937] via-[#4b5563] to-[#9ca3af]',
+    aspectRatio: 'aspect-[3/4]'
+  },
+  {
+    id: 'm3',
+    title: 'The Mastermind',
+    subtitle: 'Tense Psychological Pulse',
+    description: 'A sharp, suspense-driven composition using minimal motifs and a steady, creeping pulse.',
+    fileUrl: musicTrack('The Mastermind.mp3'),
+    accent: 'from-[#2d1b69] via-[#4c1d95] to-[#7c3aed]',
+    aspectRatio: 'aspect-[16/9]'
+  },
+  {
+    id: 'm4',
+    title: 'Whisper',
+    subtitle: 'Quiet Intimate Sketch',
+    description: 'A softer theme that prioritizes breath, space, and gentle emotional texture over dramatic density.',
+    fileUrl: musicTrack('Whisper.mp3'),
+    accent: 'from-[#1e3a5f] via-[#2563eb] to-[#60a5fa]',
+    aspectRatio: 'aspect-[4/3]'
+  },
+  {
+    id: 'm5',
+    title: 'Echoes of the Earth',
+    subtitle: 'Organic Worldbuilding Sound',
+    description: 'A grounded, earthy concept with expansive movement and a sense of ancient, living space.',
+    fileUrl: musicTrack('Echoes of the Earth.mp3'),
+    accent: 'from-[#14532d] via-[#16a34a] to-[#86efac]',
+    aspectRatio: 'aspect-[3/4]'
+  },
+  {
+    id: 'm6',
+    title: 'Evil Arrival',
+    subtitle: 'Threatening Foreboding Theme',
+    description: 'An ominous dark concept built around tension, sudden shifts, and a cold, invasive atmosphere.',
+    fileUrl: musicTrack('Evil Arrival.mp3'),
+    accent: 'from-[#111827] via-[#374151] to-[#6b7280]',
+    aspectRatio: 'aspect-[16/9]'
+  }
+];
+
+export const RESEARCH_PAPERS: ResearchPaper[] = [
+  {
+    id: 'p1',
+    title: 'The Role of Augmented Reality in Human-Computer Interaction',
+    category: 'Research Paper',
+    summary: 'A concept-driven research note examining visual identity, narrative architecture, and worldbuilding systems.',
+    fileUrl: paperAsset('research paper.pdf'),
+    fileType: 'pdf',
+    year: '2025',
+    readTime: '10 min read'
+  },
+  {
+    id: 'p2',
+    title: 'FOVX(Field of View EXtended)-New Movie Format idea',
+    category: 'Concept Paper',
+    summary: 'A design and storytelling brief outlining the creative framework, references, and tonal direction.',
+    fileUrl: paperAsset('FOVX.docx'),
+    fileType: 'docx',
+    year: '2025',
+    readTime: '6 min read'
   }
 ];
 

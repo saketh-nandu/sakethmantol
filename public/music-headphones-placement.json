@@ -1,0 +1,16 @@
+{
+  "sectionId": "music",
+  "label": "Music Video",
+  "src": "http://localhost:3000/assets/headphones.mp4",
+  "placement": {
+    "x": -0.31479811924394285,
+    "y": 5.2,
+    "width": 55,
+    "height": 20.744559120143286
+  },
+  "flipHorizontal": false,
+  "chromaSettings": {
+    "intensity": 0,
+    "blur": 0
+  }
+}

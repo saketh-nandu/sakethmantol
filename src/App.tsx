@@ -13,6 +13,8 @@ import { CreativeSection } from './components/CreativeSection';
 import { SkillsSection } from './components/SkillsSection';
 import { GallerySection } from './components/GallerySection';
 import { JournalSection } from './components/JournalSection';
+import { MusicSection } from './components/MusicSection';
+import { ResearchSection } from './components/ResearchSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { ProtectionOverlay } from './components/ProtectionOverlay';
@@ -22,7 +24,7 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'journey', 'projects', 'creative', 'skills', 'gallery', 'journal', 'contact'];
+      const sections = ['hero', 'about', 'journey', 'projects', 'creative', 'skills', 'gallery', 'journal', 'music', 'research', 'contact'];
       const scrollPosition = window.scrollY + 250;
 
       for (const sectionId of sections) {
@@ -64,6 +66,8 @@ export default function App() {
         <SkillsSection />
         <GallerySection />
         <JournalSection />
+        <MusicSection />
+        <ResearchSection />
         <ContactSection />
       </main>
 

@@ -1,5 +1,5 @@
-[main 398b32b] SEO: meta tags, OG, Twitter card, JSON-LD, sitemap, robots.txt, favicon
- 4 files changed, 6 insertions(+), 7 deletions(-)
+[main 38c7658] SEO: meta tags, OG, Twitter card, JSON-LD, sitemap, robots.txt, favicon
+ 5 files changed, 11 insertions(+), 11 deletions(-)
 To https://github.com/saketh-nandu/sakethmantol.git
-   4958941..398b32b  main -> main
+   398b32b..38c7658  main -> main
 EXIT:0

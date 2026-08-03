@@ -15,10 +15,15 @@ export const GallerySection: React.FC = () => {
     ? GALLERY_ITEMS
     : GALLERY_ITEMS.filter((item) => item.category === filter);
 
-  // Split into columns for a messy/staggered masonry feel
   const col1 = filteredItems.filter((_, i) => i % 3 === 0);
   const col2 = filteredItems.filter((_, i) => i % 3 === 1);
   const col3 = filteredItems.filter((_, i) => i % 3 === 2);
+
+  const getCardHeight = (idx: number, colOffset: number) => {
+    const base = [44, 56, 64, 72, 80, 88][idx % 6];
+    const offset = colOffset % 2 === 0 ? 0 : 6;
+    return `${base + offset}px`;
+  };
 
   const renderCard = (item: GalleryItem, idx: number, colOffset: number) => (
     <motion.div
@@ -30,8 +35,8 @@ export const GallerySection: React.FC = () => {
       onClick={() => setSelectedImage(item)}
       className="group relative bg-[#111111] overflow-hidden cursor-pointer select-none mb-5"
       style={{
-        // Random slight rotation for messy aesthetic
-        transform: `rotate(${((idx + colOffset) % 2 === 0 ? 1 : -1) * ((idx % 3) * 0.4)}deg)`,
+        transform: `rotate(${((idx + colOffset) % 2 === 0 ? 1 : -1) * ((idx % 3) * 0.35)}deg)`,
+        minHeight: getCardHeight(idx, colOffset),
         transition: 'transform 0.3s ease, box-shadow 0.3s ease',
       }}
       whileHover={{
@@ -42,7 +47,7 @@ export const GallerySection: React.FC = () => {
       }}
     >
       {/* Image */}
-      <div className="w-full overflow-hidden">
+      <div className="w-full h-full overflow-hidden">
         <img
           src={item.image}
           alt={item.title}

@@ -66,6 +66,27 @@ export interface JournalArticle {
   fileType?: 'pdf' | 'docx';
 }
 
+export interface MusicTrack {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  fileUrl: string;
+  accent: string;
+  aspectRatio?: string;
+}
+
+export interface ResearchPaper {
+  id: string;
+  title: string;
+  category: string;
+  summary: string;
+  fileUrl: string;
+  fileType: 'pdf' | 'docx';
+  year: string;
+  readTime: string;
+}
+
 export interface SkillGroup {
   category: string;
   skills: { name: string; note?: string }[];

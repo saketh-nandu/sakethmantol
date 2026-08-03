@@ -32,6 +32,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
     { id: 'skills', label: 'Skills' },
     { id: 'gallery', label: 'Gallery' },
     { id: 'journal', label: 'Journal' },
+    { id: 'music', label: 'Music' },
+    { id: 'research', label: 'Research' },
     { id: 'contact', label: 'Contact' },
   ];
 
