@@ -1,5 +1,20 @@
-[main 38c7658] SEO: meta tags, OG, Twitter card, JSON-LD, sitemap, robots.txt, favicon
- 5 files changed, 11 insertions(+), 11 deletions(-)
+[main 770d7ff] SEO: meta tags, OG, Twitter card, JSON-LD, sitemap, robots.txt, favicon
+ 23 files changed, 655 insertions(+), 11 deletions(-)
+ create mode 100644 assets/headphones.mp4
+ create mode 100644 assets/music/Blood sword.mp3
+ create mode 100644 assets/music/Darkness arrives.mp3
+ create mode 100644 assets/music/Echoes of the Earth.mp3
+ create mode 100644 assets/music/Evil Arrival.mp3
+ create mode 100644 assets/music/Lone Warrior.mp3
+ create mode 100644 assets/music/Mastermind of Shadows.mp3
+ create mode 100644 assets/music/The Last Dawn of Chains.mp3
+ create mode 100644 assets/music/The Mastermind.mp3
+ create mode 100644 assets/music/The Roar of the Earth.mp3
+ create mode 100644 assets/music/Whisper.mp3
+ create mode 100644 assets/music/clash of war.mp3
+ create mode 100644 public/music-headphones-placement.json
+ create mode 100644 src/components/MusicSection.tsx
+ create mode 100644 src/components/ResearchSection.tsx
 To https://github.com/saketh-nandu/sakethmantol.git
-   398b32b..38c7658  main -> main
+   38c7658..770d7ff  main -> main
 EXIT:0
