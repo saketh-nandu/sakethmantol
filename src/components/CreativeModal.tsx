@@ -27,13 +27,13 @@ export const CreativeModal: React.FC<CreativeModalProps> = ({ work, onClose }) =
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-[110] overflow-y-auto bg-[#111111]/60 backdrop-blur-sm flex justify-center items-start p-4 sm:p-6 md:p-12">
+      <div className="fixed inset-0 z-[110] overflow-y-auto bg-[#111111]/60 backdrop-blur-sm flex justify-center items-start p-4 pt-24 sm:p-6 md:p-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.96, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.96, y: 20 }}
           transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-          className="relative w-full max-w-4xl bg-[#FFFFFF] border border-[#ECECEC] shadow-2xl overflow-hidden my-auto"
+          className="relative w-full max-w-4xl bg-[#FFFFFF] border border-[#ECECEC] shadow-2xl overflow-hidden mt-20 sm:my-auto"
         >
           {/* Header Bar */}
           <div className="sticky top-0 z-20 bg-[#FFFFFF]/90 backdrop-blur-md border-b border-[#ECECEC] px-6 py-4 flex items-center justify-between">

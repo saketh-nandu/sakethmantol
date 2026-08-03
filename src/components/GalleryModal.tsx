@@ -27,13 +27,13 @@ export const GalleryModal: React.FC<GalleryModalProps> = ({ item, onClose }) => 
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 overflow-y-auto bg-[#111111]/80 backdrop-blur-md flex justify-center items-center p-4 sm:p-6">
+      <div className="fixed inset-0 z-[110] overflow-y-auto bg-[#111111]/80 backdrop-blur-md flex justify-center items-start p-4 pt-24 sm:p-6 sm:items-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.95 }}
           transition={{ duration: 0.3 }}
-          className="relative max-w-5xl w-full bg-[#FFFFFF] border border-[#ECECEC] shadow-2xl overflow-hidden my-auto"
+          className="relative max-w-5xl w-full bg-[#FFFFFF] border border-[#ECECEC] shadow-2xl overflow-hidden mt-20 sm:my-auto"
         >
           {/* Header */}
           <div className="bg-[#FFFFFF] border-b border-[#ECECEC] px-6 py-4 flex items-center justify-between">
