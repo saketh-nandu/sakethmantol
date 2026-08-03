@@ -1,7 +1,6 @@
-[main 8f7060b] SEO: meta tags, OG, Twitter card, JSON-LD, sitemap, robots.txt, favicon
- 5 files changed, 96 insertions(+), 16 deletions(-)
- create mode 100644 public/apple-touch-icon.svg
- create mode 100644 public/og-image.svg
+[main e44295b] SEO: meta tags, OG, Twitter card, JSON-LD, sitemap, robots.txt, favicon
+ 2 files changed, 9 insertions(+), 18 deletions(-)
+ create mode 100644 BingSiteAuth.xml
 To https://github.com/saketh-nandu/sakethmantol.git
-   770d7ff..8f7060b  main -> main
+   8f7060b..e44295b  main -> main
 EXIT:0
