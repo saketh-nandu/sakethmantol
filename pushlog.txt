@@ -1,6 +1,5 @@
-[main e44295b] SEO: meta tags, OG, Twitter card, JSON-LD, sitemap, robots.txt, favicon
- 2 files changed, 9 insertions(+), 18 deletions(-)
- create mode 100644 BingSiteAuth.xml
+[main 075c67b] SEO: meta tags, OG, Twitter card, JSON-LD, sitemap, robots.txt, favicon
+ 2 files changed, 5 insertions(+), 5 deletions(-)
 To https://github.com/saketh-nandu/sakethmantol.git
-   8f7060b..e44295b  main -> main
+   e44295b..075c67b  main -> main
 EXIT:0
